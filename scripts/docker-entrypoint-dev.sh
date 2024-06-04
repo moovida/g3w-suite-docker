@@ -27,4 +27,5 @@ git config --global --add safe.directory /code
 
 # Start Django server
 # -------------------
-python3 manage.py runserver 0.0.0.0:8000
+# python3 manage.py runserver 0.0.0.0:8000
+tail -f /dev/null

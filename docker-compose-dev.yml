@@ -29,7 +29,7 @@ services:
 
 
   g3w-suite:
-    image: g3wsuite/g3w-suite:dev
+    image: g3wsuite/g3w-suite:v3.7.x
     environment:
       - DISPLAY=:99
       - G3WSUITE_TILECACHE_PATH
@@ -78,6 +78,14 @@ services:
 
     networks:
       internal:
+
+  redis:
+    image: redis:latest
+    expose:
+    - 6379
+    networks:
+      internal:
+    restart: always
 
 volumes:
   shared-volume:

@@ -24,7 +24,8 @@ G3WADMIN_LOCAL_MORE_APPS = [
     # Uncomment if you wont activate the following module
     #'openrouteservice',
     'qtimeseries',
-    'frontend'
+    # 'frontend'
+    'idrogeo'
 ]
 
 DATABASES = {
